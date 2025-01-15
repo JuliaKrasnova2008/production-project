@@ -1,0 +1,35 @@
+:root {
+  --font-family-main: Consolas, "Times New Roman", Serif;
+  --font-size-m: 16px;
+  --font-line-m: 24px;
+  --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+  --font-size-l: 24px;
+  --font-line-l: 32px;
+  --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+  --navbar-height: 50px;
+}
+
+.app.dark {
+  --bg-color: grey;
+  --inverted-bg-color: white;
+  --primary-color: white;
+  --secondary-color: rgba(128, 128, 128, 0.221);
+  --inverted-primary-color: black;
+  --inverted-secondary-color: rgba(128, 128, 128, 0.946);
+}
+
+.app.light {
+  --bg-color: white;
+  --inverted-bg-color: grey;
+  --primary-color: black;
+  --secondary-color: rgba(128, 128, 128, 0.946);
+  --inverted-primary-color: white;
+  --inverted-secondary-color: rgba(128, 128, 128, 0.221);
+}
+
+.app {
+  font: var(--font-m);
+  background: var(--bg-color);
+  color: var(--primary-color);
+  min-height: 100vh;
+}
