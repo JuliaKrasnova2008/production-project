@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div className={classNames("app", {}, [theme])}>
       <NavBar />
-      <div>
+      <div className="content-page">
         <Sidebar />
         <AppRouter />
       </div>
